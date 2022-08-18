@@ -1,0 +1,98 @@
+body {
+  background: #f8d7b0;
+  display: flex;
+  flex-direction: column;
+}
+
+div > h1 {
+  float: right;
+  margin: 0;
+  color: #5e1c06;
+}
+h2 {
+  padding: 10px 10px 15px 10px;
+}
+ 
+#clear {
+  float: left;
+  background: white;
+  border: 2px solid #5e1c06;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#header {
+  margin: 3% 15% 1% 15%;
+}
+
+section {
+  display: flex;
+}
+
+#work,
+#cardTitle {
+  width: 85%;
+  padding: 5px;
+  font-size: 15px;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #5e1c06;
+  height: 3px;
+  margin-bottom: 1em;
+}
+
+#add {
+  margin: 0 10% 0 10%;
+}
+
+#edit {
+  margin: 0 10% 0 10%;
+}
+
+#add > button,
+#edit > button {
+  background-color: #5e1c06;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  width: 10%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#card1Selected,
+#card2Selected,
+#card3Selected {
+  float: right;
+  margin: 5%;
+  cursor: pointer;
+}
+
+section {
+  margin: 0 10% 0 10%;
+}
+
+.card1,
+.card2,
+.card3 {
+  margin: 2% 10px 0 10px;
+  width: 30%;
+  height: 350px;
+  background: white;
+}
+/* ul{
+  list-style:disc;
+} */
+
+
+#selected {
+  background: #e5d4cd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

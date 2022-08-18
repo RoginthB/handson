@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./style.css" />
+  <title>Worklist</title>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Today's Worklist</h1>
+    <button id="clear" onclick="clearWorkList()">Clear The Worklist</button>
+    <div>
+      <input type="radio" id="addWork" name="mode" value="add" onclick="changeMode()" checked />
+      <label for="addWork">Add Work</label>
+      <input type="radio" id="editTitle" name="mode" value="edit" onclick="changeMode()" />
+      <label for="editTitle">Change Card Title</label>
+      <input type="radio" id="delete" name="mode" value="delete" onclick="changeMode()" />
+      <label for="delete">Delete Work</label>
+    </div>
+  </div>
+  <hr />
+  <div id="add">
+    <input type="text" id="work" placeholder="Write Your Work To Do" />
+    <button id="btnAdd" onClick="addWork()">Add</button>
+  </div>
+  <div id="edit" style="display: none;">
+    <input type="text" id="cardTitle" placeholder="Write your card title" />
+    <button id="btnUpdate"  onClick="update()">Update</button>
+  </div>
+  <section>
+    <div class="card1" id="selected">
+      <input type="radio" id="card1Selected" name="cardSelected" value="card1Selected" checked
+        onclick="selectCard('card1')" />
+      <h2>Home</h2>
+    </div>
+    <div class="card2" id="none">
+      <input type="radio" id="card2Selected" name="cardSelected" value="card2Selected" onclick="selectCard('card2')" />
+      <h2>Shopping</h2>
+    </div>
+    <div class="card3" id="none">
+      <input type="radio" id="card3Selected" name="cardSelected" value="card3Selected" onclick="selectCard('card3')" />
+      <h2>Office</h2>
+    </div>
+  </section>
+</body>
+<script src="./main.js"></script>
+
+</html>
